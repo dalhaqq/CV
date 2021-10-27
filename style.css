@@ -1,0 +1,31 @@
+#about, #skills, #certificates, #projects, #contact {
+    padding-top: 4rem;
+}
+.container h3 {
+    padding-bottom: 2rem;
+}
+.card-image-top {
+    cursor: pointer;
+}
+.contact-form{
+    background: #fff;
+    margin-bottom: 5%;
+}
+.contact-form form{
+    padding: 0 14%;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+#footer {
+    background: #fff;
+    padding: 2rem 0;
+    margin-top: 5%;
+}
