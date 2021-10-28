@@ -1,3 +1,9 @@
+.alert.alert-warning {
+    position: fixed;
+    top: 80px;
+    right: 10px;
+    z-index: 9999;
+}
 #about, #skills, #certificates, #projects, #contact {
     padding-top: 4rem;
 }
