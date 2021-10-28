@@ -51,6 +51,13 @@ const projects = [
         name: "Predict on Web",
         desc: "Simple classifier based on Naive Bayes algorithm built with HTML, CSS, and JavaScript",
         url: "https://dalhaqq.github.io/predict-on-web"
+    },
+    {
+        id: "rps",
+        imgs: ["rps5.png", "rps1.png", "rps2.png", "rps3.png", "rps4.png"],
+        name: "Image Classifier",
+        desc: "Rock-Paper-Scissor image classifier using TensorFlow's Keras model",
+        url: "https://colab.research.google.com/drive/17O8JXRkT1CFRPh7IenE32tJ5c3jD66nz?authuser=1"
     }
 ]
 
@@ -73,13 +80,13 @@ projects.forEach(function (project, index) {
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-lg-8">
-                                            <div id="pow" class="carousel slide" data-ride="carousel">
+                                            <div id="${project.id}Crs" class="carousel slide" data-ride="carousel">
                                                 <div class="carousel-inner">${carousel}</div>
-                                                <a class="carousel-control-prev" href="#pow" role="button" data-slide="prev">
+                                                <a class="carousel-control-prev" href="#${project.id}Crs" role="button" data-slide="prev">
                                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                                     <span class="sr-only">Previous</span>
                                                 </a>
-                                                <a class="carousel-control-next" href="#pow" role="button" data-slide="next">
+                                                <a class="carousel-control-next" href="#${project.id}Crs" role="button" data-slide="next">
                                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                     <span class="sr-only">Next</span>
                                                 </a>
@@ -92,7 +99,7 @@ projects.forEach(function (project, index) {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="flip-left" data-aos-offset="${150 * index}">
+                <div class="col-md-4" data-aos="flip-left" data-aos-offset="${150 * (index+1)}">
                 <div class="card">
                     <img class="card-image-top" src="images/projects/${project.id}/${project.imgs[0]}" alt="${project.name}" data-toggle="modal" data-target="#${project.id}Proj">
                     <div class="card-body">
