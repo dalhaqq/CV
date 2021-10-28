@@ -1,6 +1,9 @@
 #about, #skills, #certificates, #projects, #contact {
     padding-top: 4rem;
 }
+.container .card {
+    margin-bottom: 2rem;
+}
 .container h3 {
     padding-bottom: 2rem;
 }
