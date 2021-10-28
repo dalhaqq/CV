@@ -73,3 +73,53 @@ fetch('projects.json')
                 </div>
             </div>`
 }))
+
+const yLabels = {
+    2 : 'newbie', 4 : 'intermediate', 6 : 'advanced', 8 : 'expert', 10 : 'master',
+}
+
+var ctx = document.getElementById("myChart")
+var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["HTML/CSS", "PHP", "Python", "JavaScript", "C/C++", "Java"],
+            datasets: [{
+                data: [5, 6, 7, 5, 4, 4],
+                backgroundColor: [
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(255, 206, 86, 0.2)'
+
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)'
+
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+        scales: {
+            y: {
+                max: 10,
+                ticks: {
+                    // Include a dollar sign in the ticks
+                    callback: function(value, index, values) {
+                        return yLabels[value];
+                    }
+                }
+            }
+        },
+        plugins: {
+            tooltip: {
+                enabled: false
+            },
+            legend: {
+                display: false
+            }
+        }
+    }})
