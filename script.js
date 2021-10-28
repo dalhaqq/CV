@@ -1,30 +1,8 @@
-const certificates = [
-    {
-        id: "ml",
-        img: "ml.png",
-        title: "Pengenalan Machine Learning",
-        platform: "Dicoding",
-        url: "https://www.dicoding.com/certificates/53XEEM709XRN"
-    },
-    {
-        id: "python",
-        img: "python.png",
-        title: "Python (Basic)",
-        platform: "HackerRank",
-        url: "https://www.hackerrank.com/certificates/921a41a19764"
-    },
-    {
-        id: "rwd",
-        img: "rwd.png",
-        title: "Responsive Web Design",
-        platform: "freeCodeCamp",
-        url: "https://www.freecodecamp.org/certification/abdalhaqq/responsive-web-design"
-    },
-]
-
 // Add certificates to element
 const certificateContainer = document.querySelector("#certificates .row")
-certificates.forEach(function (certificate, index) {
+fetch('certificates.json')
+  .then(response => response.json())
+  .then(data => data.forEach(function (certificate, index) {
     certificateContainer.innerHTML += `
             <div class="modal" id="${certificate.id}Cert" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -42,27 +20,13 @@ certificates.forEach(function (certificate, index) {
                     </div>
                 </div>
             </div>`
-})
+}));
 
-const projects = [
-    {
-        id: "pow",
-        imgs: ["pow1.png", "pow2.png"],
-        name: "Predict on Web",
-        desc: "Simple classifier based on Naive Bayes algorithm built with HTML, CSS, and JavaScript",
-        url: "https://dalhaqq.github.io/predict-on-web"
-    },
-    {
-        id: "rps",
-        imgs: ["rps5.png", "rps1.png", "rps2.png", "rps3.png", "rps4.png"],
-        name: "Image Classifier",
-        desc: "Rock-Paper-Scissor image classifier using TensorFlow's Keras model",
-        url: "https://colab.research.google.com/drive/17O8JXRkT1CFRPh7IenE32tJ5c3jD66nz?authuser=1"
-    }
-]
-
+// Add projects to element
 const projectContainer = document.querySelector("#projects .row")
-projects.forEach(function (project, index) {
+fetch('projects.json')
+  .then(response => response.json())
+  .then(data => data.forEach(function (project, index) {
     let carousel = ``
     project.imgs.forEach((img, idx) => {
         const active = idx == 0 ? 'active' : ''
@@ -108,4 +72,4 @@ projects.forEach(function (project, index) {
                     </div>
                 </div>
             </div>`
-})
+}))
