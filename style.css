@@ -7,8 +7,40 @@
 html {
     scroll-behavior: smooth;
 }
-#about, #skills, #certificates, #projects, #contact {
+.navbar-dark {
+    background-color: #030e12;
+}
+.shape-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+.jumbotron {
+    margin-bottom: 0;
+}
+.jumbotron img {
+    max-width: 200px;
+    max-height: 200px;
+    border: 3px solid #fff;
+}
+section {
     padding-top: 4rem;
+}
+#about {
+    background: #5bccf6;
+}
+#skills {
+    background: #ffffff;
+}
+#certificates {
+    background: #5bccf6;
+}
+#projects {
+    background: #ffffff;
+}
+#contact {
+    background: #5bccf6;
 }
 .container .card {
     margin-bottom: 2rem;
@@ -19,25 +51,18 @@ html {
 .card-image-top {
     cursor: pointer;
 }
-.contact-form{
-    background: #fff;
-    margin-bottom: 5%;
+.contact-form {
+    padding-bottom: 6rem;
 }
 .contact-form form{
     padding: 0 14%;
 }
 .btnContactSubmit
 {
-    width: 50%;
-    border-radius: 1rem;
-    padding: 1.5%;
     color: #fff;
-    background-color: #0062cc;
-    border: none;
-    cursor: pointer;
+    background-color: #030e12;
 }
 #footer {
     background: #fff;
     padding: 2rem 0;
-    margin-top: 5%;
 }
