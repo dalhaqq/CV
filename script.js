@@ -63,8 +63,7 @@ projects.forEach(function (project, index) {
                         <img src="images/projects/${project.id}/${img}" class="d-block w-100" alt="${project.name}">
                     </div>`
     })
-    projectContainer.innerHTML += `<div class="col-md-4">
-                <div class="modal" id="${project.id}Proj" tabindex="-1" role="dialog">
+    projectContainer.innerHTML += `<div class="modal" id="${project.id}Proj" tabindex="-1" role="dialog">
                     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -93,6 +92,7 @@ projects.forEach(function (project, index) {
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-offset="${150 * index}">
                 <div class="card">
                     <img class="card-image-top" src="images/projects/${project.id}/${project.imgs[0]}" alt="${project.name}" data-toggle="modal" data-target="#${project.id}Proj">
                     <div class="card-body">
