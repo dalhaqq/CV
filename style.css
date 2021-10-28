@@ -4,6 +4,9 @@
     right: 10px;
     z-index: 9999;
 }
+html {
+    scroll-behavior: smooth;
+}
 #about, #skills, #certificates, #projects, #contact {
     padding-top: 4rem;
 }
