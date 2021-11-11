@@ -1,14 +1,14 @@
 [
     {
         "id": "pow",
-        "imgs": ["pow1.png", "pow2.png"],
+        "imgs": ["pow1", "pow2"],
         "name": "Predict on Web",
         "desc": "Simple classifier based on Naive Bayes algorithm built with HTML, CSS, and JavaScript",
         "url": "https://dalhaqq.github.io/predict-on-web"
     },
     {
         "id": "rps",
-        "imgs": ["rps5.png", "rps1.png", "rps2.png", "rps3.png", "rps4.png"],
+        "imgs": ["rps5", "rps1", "rps2", "rps3", "rps4"],
         "name": "Image Classifier",
         "desc": "Rock-Paper-Scissor image classifier using TensorFlow's Keras model",
         "url": "https://colab.research.google.com/drive/17O8JXRkT1CFRPh7IenE32tJ5c3jD66nz?authuser=1"

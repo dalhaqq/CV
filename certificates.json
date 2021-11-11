@@ -1,21 +1,21 @@
 [
     {
         "id": "ml",
-        "img": "ml.png",
+        "img": "ml",
         "title": "Pengenalan Machine Learning",
         "platform": "Dicoding",
         "url": "https://www.dicoding.com/certificates/53XEEM709XRN"
     },
     {
         "id": "python",
-        "img": "python.png",
+        "img": "python",
         "title": "Python (Basic)",
         "platform": "HackerRank",
         "url": "https://www.hackerrank.com/certificates/921a41a19764"
     },
     {
         "id": "rwd",
-        "img": "rwd.png",
+        "img": "rwd",
         "title": "Responsive Web Design",
         "platform": "freeCodeCamp",
         "url": "https://www.freecodecamp.org/certification/abdalhaqq/responsive-web-design"
