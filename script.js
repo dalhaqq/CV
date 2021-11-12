@@ -170,3 +170,32 @@ var myChart = new Chart(ctx, {
     },
   },
 });
+
+$('#loginModal').on('shown.bs.modal', e => {
+  const username = document.getElementById('username');
+  const password = document.getElementById('password');
+  username.focus();
+  username.addEventListener('keydown', e => {
+    if (e.key == 'Enter') {
+      e.preventDefault();
+      if (username.value == '') {
+        alert('Username can not be blank');
+        username.focus();
+      } else {
+        password.focus();
+      }
+    }
+  });
+  password.addEventListener('keydown', e => {
+    if (e.key == 'Enter') {
+      e.preventDefault();
+      if (password.value == '') {
+        alert('Password can not be blank');
+        password.focus();
+      } else {
+        document.getElementById('loginForm').submit();
+      }
+    }
+  });
+  
+});

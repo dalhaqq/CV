@@ -4,6 +4,13 @@ html {
 .navbar-dark {
     background-color: #030e12;
 }
+.navbar-nav {
+    width: 100%;
+}
+.btn-login {
+    position: relative;
+    right: 0;
+}
 .shape-container {
     position: relative;
     text-align: center;
